@@ -15,3 +15,29 @@ int b2 = Num("b2");
 
 
 //не решено, разобраться не получилось. Все варианты подобных программ используют классы и ключевые слова, которые я не проходил. Скорее всего я не понял что то из семинаров на базовом уровне.
+/*
+(int x, int y) GetCoordinates(int k1, int k2, int b1, int b2)
+{
+	(int x, int y) result = (0, 0);
+
+
+	result.x = (b1 - b2) / (k2 - k1);
+	result.y = k1 * result.x + b1;
+
+	return result;
+}
+*/
+
+(int x, int y) GetCoordinates(int k1, int k2, int b1, int b2)
+{
+	(int x, int y) result = (0, 0);
+
+
+	result.x = (b1 - b2) / (k2 - k1);
+	result.y = k1 * result.x + b1;
+
+	return result;
+}
+
+
+var result = GetCoordinates(1, 1, 1, 1);
